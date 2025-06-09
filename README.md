@@ -12,7 +12,8 @@ The compiler optimization level can be set to maximum, such as `-O3` for the `cl
 
 ## How to use
 1. Include `include/xorstr.hpp` in your project.
-2. Create compile-time encrypted strings.
+2. Change the cipher key to your own.
+3. Create compile-time encrypted strings.
 
 ```cpp
 #include "xorstr.hpp"

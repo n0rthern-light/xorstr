@@ -3,6 +3,8 @@ Header only library for compile-time encrypted strings.
 
 The provided library should encrypt sensitive strings - such as API URLs in a client application - and decrypt them only at runtime.
 
+The library supports all modern C++ string encodings, including narrow strings, wide strings, UTF-8, UTF-16, and UTF-32.
+
 ## Prerequisites
 Because of the use of `consteval` for the constructor of `EncryptedString`, `C++20` is required at minimum.
 

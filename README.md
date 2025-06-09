@@ -3,6 +3,7 @@ Header only library for compile-time encrypted strings.
 
 The provided library should encrypt sensitive strings - such as API URLs in a client application - and decrypt them only at runtime.
 
+## Prerequisites
 Because of the use of `consteval` for the constructor of `EncryptedString`, `C++20` is required at minimum.
 
 If you removed or replaced `consteval` with `constexpr`, the minimum version would drop to `C++17` (because of inline constexpr variables). But due to the fact that for proper encryption the string MUST be evaluated at compile-time, the `consteval` is a lot safer bet.

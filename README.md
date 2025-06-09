@@ -11,7 +11,7 @@ If you removed or replaced `consteval` with `constexpr`, the minimum version wou
 The compiler optimization level can be set to maximum, such as `-O3` for the `clang++` compiler, as shown in the example. However, it is important to note that for this library's encryption mechanism to work correctly, the decryption function MUST NOT be optimized. This is because compilers often silently evaluate it at compile time, whereas runtime evaluation is required. To ensure proper runtime decryption, compiler optimizations are explicitly disabled for the decrypt function. This approach SHOULD be compatible with `clang`, `gcc`, and `msvc` compilers, although the code has only been tested with clang so far.
 
 ## How to use
-1. Include `include/xorstr.hpp` in your project.
+1. Include [`include/xorstr.hpp`](include/xorstr.hpp). in your project.
 2. Change the cipher key to your own.
 3. Create compile-time encrypted strings.
 
@@ -33,7 +33,7 @@ auto main() -> int
 }
 ```
 ## Example
-See example usage in `example`
+See example usage in [`example/main.cpp`](example/main.cpp).
 
 ```sh
 cd example
